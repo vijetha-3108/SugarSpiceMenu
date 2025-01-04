@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sugar&Spice</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="zoom">
+            <h1>Sugar & Spice</h1>
+        </div>
+
+        <div class="zoom">
+            <img id="cutlery" src="D:\Vijetha\1sem\WT\restaurants\Linea Flatware Set.jpeg" alt="Restaurant Decor">
+        </div>
+
+        <a target="_blank" href="https://www.google.com/maps/place/Sugar+'N+Spice/@20.3883856,72.8959581,17z/data=!3m1!4b1!4m6!3m5!1s0x3be0d1df475b0827:0xa88c93d408267a79!8m2!3d20.3883856!4d72.898533!16s%2Fg%2F11rq8nrpl5?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+            <p id="info">
+                1st Floor, Time Square, Road, Daulat Nagar, Chala, Vapi, Gujarat 396191
+            </p>
+        </a>
+
+        <nav id="navbar">
+            <a href="#quick">QUICKBITE</a>
+            <a href="#rice">RICE</a>
+            <a href="#chinese">CHINESE</a>
+            <a href="#chaat">CHAATS</a>
+            <a href="#minimeal">MINIMEALS</a>
+            <a href="#sweet">SWEETS</a>
+            <a href="#icecream">ICECREAMS & SUNDAES</a>
+            <a href="#beverage">BEVERAGES</a>      
+        </nav>
+
+        <div id="class">
+
+            <div class="order">
+
+                <h2>Your Order</h2>
+
+                <table class="order-table">
+                    <tbody id="order-table-body">
+                        <!-- Items will be dynamically added here -->
+                    </tbody>
+                </table>
+
+                <button class="order-button" onclick="placeOrder()">Place Order</button>
+                
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="section">
+
+            <section id="quick" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>Quick Bite</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\Popeyes Cajun Fries (Copycat French Fries Recipe).jpeg" alt="French Fries" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="French Fries"> French Fries
+                            </label>
+                        </li>   
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (1).jpeg" alt="Samosas" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Samosas"> Samosas
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download.jpeg" alt="Bombay Sandwich" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Bombay Sandwich"> Bombay Sandwich
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (2).jpeg" alt="Khaman" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Khaman"> Khaman
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (3).jpeg" alt="Vada Pav" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Vada Pav"> Vada Pav
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            
+            <section id="rice" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>RICE</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (2).jpeg" alt="Dal Fry & Jeera Rice" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Dal Fry & Jeera Rice"> Dal Fry & Jeera Rice
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (11).jpeg" alt="Dal Khichdi" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Dal Khichdi"> Dal Khichdi
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (4).jpeg" alt="Veg. Hyderabadi Biryani" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Veg. Hyderabadi Biryani"> Veg. Hyderabadi Biryani
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (12).jpeg" alt="Veg. Fried Rice" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Veg. Fried Rice"> Veg. Fried Rice
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (6).jpeg" alt="Rajma Chawal" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Rajma Chawal"> Rajma Chawal
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            
+            <section id="chinese" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>CHINESE</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (8).jpeg" alt="Veg Manchow Soup" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Veg Manchow Soup"> Veg Manchow Soup
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (10).jpeg" alt="Veg. Manchurian" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Veg. Manchurian"> Veg. Manchurian
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (5).jpeg" alt="Paneer Chilly" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Paneer Chilly"> Paneer Chilly
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (13).jpeg" alt="Veg. Hakka Noodles" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Veg. Hakka Noodles"> Veg. Hakka Noodles
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (5).jpeg" alt="Schezwan Fried Rice" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Schezwan Fried Rice"> Schezwan Fried Rice
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+
+            <section id="chaats" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>CHAATS</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (8).jpeg" alt="Pani Puri" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Pani Puri"> Pani Puri
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (7).jpeg" alt="Sev Puri" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Sev Puri"> Sev Puri
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (14).jpeg" alt="Raj Kachori" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Raj Kachori"> Raj Kachori
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (9).jpeg" alt="Ragda Patties" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Ragda Patties"> Ragda Patties
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (15).jpeg" alt="Dahi Bhalla" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Dahi Bhalla"> Dahi Bhalla
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+
+            <section id="minimeals" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>MINI MEALS</summary>
+                    <ul class="dropdown">
+                       <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (10).jpeg" alt="Chole Bhature" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Chole Bhature"> Chole Bhature
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (16).jpeg" alt="Paneer Chilly Dry & Hakka Noodels" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Paneer Chilly Dry & Hakka Noodels"> Paneer Chilly Dry & Hakka Noodels
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (17).jpeg" alt="Dal Makni & Rice" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Dal Makni & Rice"> Dal Makni & Rice
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (18).jpeg" alt="Pav Bhaji" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Pav Bhaji"> Pav Bhaji
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (11).jpeg" alt="Puri Bhaji" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Puri Bhaji"> Puri Bhaji
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+
+            <section id="sweet" onclick="hideElement()" id="always-visible">
+                <details>
+                    <summary>SWEETS</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (29).jpeg" alt="Gulab Jamun" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Gulab Jamun"> Gulab Jamun
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (12).jpeg" alt="Rasgulla" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Rasgulla"> Rasgulla
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (13).jpeg" alt="Gajar Ka Halwa" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Gajar Ka Halwa"> Gajar Ka Halwa
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\images (14).jpeg" alt="Jalebi" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Jalebi"> Jalebi
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (30).jpeg" alt="Shahi Tukda" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Shahi Tukda"> Shahi Tukda
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            
+            <section id="icecream" onclick="hideElement()" id="always-visible">
+                <details>
+                <summary>ICECREAMS & SUNDAES</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (19).jpeg" alt="Vanilla" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Vanilla"> Vanilla
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (20).jpeg" alt="Chocolate Chip" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Chocolate Chip"> Chocolate Chip
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (21).jpeg" alt="Kesar Pista" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Kesar Pista"> Kesar Pista
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (22).jpeg" alt="Ice Cream Sundae" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Ice Cream Sundae"> Ice Cream Sundae
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (23).jpeg" alt="Sizzling Brownie with Ice Cream" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Sizzling Brownie with Ice Cream"> Sizzling Brownie with Ice Cream
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            
+            <section id="beverage" onclick="hideElement()" id="always-visible">
+                <details>
+                <summary>BEVERAGES</summary>
+                    <ul class="dropdown">
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (25).jpeg" alt="Tea" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Tea"> Tea
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (26).jpeg" alt="Coffee" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Coffee"> Coffee
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (27).jpeg" alt="Hot Chocolate" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Hot Chocolate"> Hot Chocolate
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (24).jpeg" alt="Sweet Lassi" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Sweet Lassi"> Sweet Lassi
+                            </label>
+                        </li>
+                        <li class="food-item">
+                            <img src="D:\Vijetha\1sem\WT\restaurants\download (28).jpeg" alt="Butter Milk" class="food-img">
+                            <label>
+                                <input type="checkbox" name="food" value="Butter Milk"> Butter Milk
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            
+        </section>
+
+    </main>
+
+    <script src="D:\Vijetha\1sem\WT\restaurants\menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 90px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    font-style: italic;
+    font-family: Helvetica;
+    text-shadow: 5px 5px 8px #ff7aff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.zoom {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#cutlery{
+    height: 300px;
+    width: 300px;
+    transition: 0.5s;
+    position: absolute;
+    top: 5px; 
+    right: 2px;
+    z-index: 1001;
+}
+
+.zoom:hover img, .zoom:hover h1 {
+    scale: 1.1;
+}
+
+p{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin-left: -300px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+nav {
+    margin-top: 8px;
+    z-index: 1000;
+    background-color: beige; 
+    padding: 15px 7px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2); 
+    font-size: 15px;
+    word-spacing: 2px;
+    font-weight: bold;
+    top:0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color:red;
+}
+
+a:active{
+    color: black;
+}
+
+#class {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: beige; 
+    margin-right:20px ;
+    margin-top: 20px;
+    margin-left: 980px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.order-table th {
+    background-color: #f4f4f4;
+}
+
+.order-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    align-items: center;
+}
+
+.order-button:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    font-size: 25px;
+    padding: 6px;
+    background-color: beige;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+details[open] summary::after {
+    content: "";
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+details summary::after {
+    content: "";
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+#always-visible {
+    display: block;
+    padding: 10px;
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#section {
+    padding: 15px;
+    background-color: beige;
+    border-radius:10px;
+    box-shadow:0 0 20px lightgray;
+}
+
+#quick, #rice, #chinese, #chaats, #minimeals, #icecream, #beverage,#sweet{
+    padding: 20px;
+    background-color: beige;
+    border-radius:20px;
+    margin: 20px;
+    box-shadow:0 0 20px lightgray;
+}
+
+h2{
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.food-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: beige;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
